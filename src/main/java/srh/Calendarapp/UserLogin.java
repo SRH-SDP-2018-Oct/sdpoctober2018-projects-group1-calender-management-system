@@ -20,7 +20,7 @@ public class UserLogin  {
 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/calender","root","1234");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/calender","root","root");
 			Statement st = con.createStatement();
 
 			System.out.println("*****CALENDER MANAGEMENT SYSTEM*****");

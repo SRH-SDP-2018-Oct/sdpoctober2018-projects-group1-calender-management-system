@@ -10,7 +10,7 @@ public class AllTests {
 		//$JUnit-BEGIN$
 		suite.addTestSuite(RecursiveTest.class);
 		suite.addTestSuite(SendInviteTest.class);
-		suite.addTestSuite(TaskInputTest.class);
+//		suite.addTestSuite(TaskInputTest.class);
 		suite.addTestSuite(UserLoginTest.class);
 		//$JUnit-END$
 		return suite;

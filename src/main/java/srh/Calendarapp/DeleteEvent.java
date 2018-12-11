@@ -18,7 +18,7 @@ public class DeleteEvent{
 
 		try {    
 			Class.forName("com.mysql.cj.jdbc.Driver");      
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/calender","root","1234"); 
+			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/calender","root","root"); 
 			stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery("select * from folder_names");
 			System.out.println("Event name(s)\n ");

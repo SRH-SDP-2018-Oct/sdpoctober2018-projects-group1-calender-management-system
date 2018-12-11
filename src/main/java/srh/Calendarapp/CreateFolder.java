@@ -22,7 +22,7 @@ public class CreateFolder {
 		try {    
 
 			Class.forName("com.mysql.cj.jdbc.Driver");      
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/calender","root","1234"); 
+			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/calender","root","root"); 
 			stmt = conn.createStatement();
 
 			System.out.println("Enter \n1.Create your own Folder\n2.To Exit");
@@ -30,7 +30,7 @@ public class CreateFolder {
 			eventNumber = in.nextInt();
 			if(eventNumber == 1) {
 
-				System.out.print("Enter your folder name");
+				System.out.print("Enter your folder name \n");
 
 				foName = in.next();
 				System.out.println("Folder name :"+ " "+foName); 
@@ -41,7 +41,7 @@ public class CreateFolder {
 
 				if(eventNumber == 1) {
 
-					System.out.print("Enter your Event name ");    
+					System.out.print("Enter your Event name \n");    
 
 					taskName = in.next();
 
